@@ -10,7 +10,7 @@ const CreateTournament = () => {
     const Navigate = useNavigate();
 
     const params = useParams();
-    console.log("params", params);
+    // console.log("params", params);
 
     const {
         isAdminLoggedIn,

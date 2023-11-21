@@ -40,7 +40,7 @@ const OrganiserRegister = () => {
         // setLoader(true);
 
         e.preventDefault();
-        console.log("send data", organisationName, email, password);
+        // console.log("send data", organisationName, email, password);
         const { data } = await axios.post(`${server}/organiser/register`, {
             organisationName, email, password
         }, {
@@ -50,7 +50,7 @@ const OrganiserRegister = () => {
             withCredentials: true,
         });
 
-        console.log("reg res data", data);
+        // console.log("reg res data", data);
         if (data.success) {
             alert(data.message);
 
@@ -113,7 +113,7 @@ const OrganiserRegister = () => {
 
             </div>
 
-            
+
         </>
     )
 }
