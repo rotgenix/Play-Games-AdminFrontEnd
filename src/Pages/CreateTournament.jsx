@@ -45,7 +45,7 @@ const CreateTournament = () => {
         }, {
             withCredentials: true,
         });
-        console.log("create tournament: ", data);
+        // console.log("create tournament: ", data);
 
         if (data.success) {
             alert(data.message);
@@ -81,7 +81,7 @@ const CreateTournament = () => {
                                 placeholder="Tournament Date"
                                 onChange={(e) => {
                                     setTournamentDate(e.target.value)
-                                    console.log(tournamentDate)
+                                    // console.log(tournamentDate)
                                 }}
                                 required
                             />
