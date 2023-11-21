@@ -1,0 +1,33 @@
+.dashboard-home {
+    background-color: #1c252c;
+}
+
+.dashboard-home-container {
+    position: relative;
+}
+
+.bg-image {
+    background-image: url('../assets/dashboard.jpg');
+    height: calc(100vh - 88px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+}
+
+.dashboard-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 95);
+    border: 1px solid black;
+    background-color: #8c929683;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.dashboard-text h3 {
+    font-size: 60px;
+    text-align: center;
+}

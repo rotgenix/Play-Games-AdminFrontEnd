@@ -1,0 +1,27 @@
+.games-card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #151928;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+/* .games-card:hover {
+    box-shadow: rgba(241, 241, 241, 0.35) 0px 2px 8px, rgba(241, 241, 241, 0.35) 0px 4px 8px;
+    transform: scaleX(1.01) scaleY(1.01);
+} */
+
+.games-card img {
+    height: 250px;
+}
+
+.games-card h3 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-block: 15px;
+}
