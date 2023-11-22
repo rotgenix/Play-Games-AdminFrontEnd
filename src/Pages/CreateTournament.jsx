@@ -29,7 +29,7 @@ const CreateTournament = () => {
     const postTournamentHandler = async (e) => {
         e.preventDefault();
 
-        console.log('sending ', tournamentName, prizePool, tournamentDate, tournamentTime, gameName);
+        // console.log('sending ', tournamentName, prizePool, tournamentDate, tournamentTime, gameName);
 
         const { data } = await axios.post(`${server}/tournament/createTournament/${adminID}`, {
             tournamentName,

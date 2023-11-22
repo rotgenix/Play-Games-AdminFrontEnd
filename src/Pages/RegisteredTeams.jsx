@@ -19,7 +19,7 @@ const RegisteredTeams = () => {
     useEffect(() => {
         const registeredTeams = async () => {
             const { data } = await axios.get(`${server}/tournaments/registeredteams/${tournamentID}`);
-            console.log("erg teams", data.tournamentRegisteredTeams);
+            // console.log("erg teams", data.tournamentRegisteredTeams);
             setRegisteredTeams(data.tournamentRegisteredTeams);
         }
         registeredTeams();
@@ -33,9 +33,9 @@ const RegisteredTeams = () => {
                     <h3>Your Registered Tournaments</h3>
                     {
                         registeredTeams.map((value, index) => {
-                            console.log("value", value);
-                            console.log("value", value.teamName);
-                            console.log("value", value.noOfPlayers);
+                            // console.log("value", value);
+                            // console.log("value", value.teamName);
+                            // console.log("value", value.noOfPlayers);
 
                             return (<RegisteredTeamsCompo
                                 teamName={value.teamName}
