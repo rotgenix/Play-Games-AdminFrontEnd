@@ -57,12 +57,9 @@ const Navbar = () => {
             const { data } = await axios.get(`${server}/organiser`, {
                 withCredentials: true,
             });
-            // console.log("Login check data", data);
-
-            const resAdminID = data.adminData[0]._id;
-            // console.log("res amd id", resAdminID);
-
+           
             if (data.success) {
+                const resAdminID = data?.adminData[0]._id;
                 // console.log("player is logged in");
                 // const pID = data.playerID;
                 setAdminID(resAdminID);
